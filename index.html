@@ -193,25 +193,13 @@ This workshop is organized by the Data Intensive Biology Training Program run by
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Wednesday, May 11th, 2016</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>12:15</td>  <td>Why dynamic documents with RMarkdown and Knitr?</td> </tr>
+      <tr> <td>12:30</td> <td>Introduction to code chunks and options, tables and plotting</td> </tr>
+      <tr> <td>13:45</td> <td>Break</td> </tr>
+      <tr> <td>14:00</td>  <td>Caching and Inserting Bibliographies</td> </tr>
+      <tr> <td>15:00</td>  <td>Wrap Up</td> </tr>
     </table>
   </div>
 </div>
@@ -258,7 +246,7 @@ This workshop is organized by the Data Intensive Biology Training Program run by
   'tools/check' as well.
 -->
 <h2 id="syllabus">Syllabus</h2>
-
+  <!--
 <div class="row">
   <div class="col-md-6">
     <h3 id="syllabus-shell">The Unix Shell</h3>
@@ -285,19 +273,19 @@ This workshop is organized by the Data Intensive Biology Training Program run by
       <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
+   -->
   <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
+    <h3 id="syllabus-r">Dynamic Documents with RMarkdown and Knitr</h3>
     <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
+      <li>Dynamic Documents and Literate Programming</li>
+      <li>Introduction to code chunk syntax and options</li>
+      <li>Inline Code</li>
+      <li>Creating tables and plots in RMarkdown</li>
+      <li>Caching</li>
+      <li>Inserting Bibliographies</li>
+      <li><a href="http://rmarkdown.rstudio.com/">Reference...</a></li>
     </ul>
   </div>
-  -->
   <!--
   <div class="col-md-6">
     <h3 id="syllabus-matlab">Programming in MATLAB</h3>
@@ -310,7 +298,7 @@ This workshop is organized by the Data Intensive Biology Training Program run by
       <li><a href="{{site.swc_githubio}}/matlab-novice-inflammation/reference.html">Reference...</a></li>
      </ul>
    </div>
-   -->
+
 </div>
 
 <div class="row">
@@ -345,7 +333,7 @@ This workshop is organized by the Data Intensive Biology Training Program run by
 </div>
 
 <hr/>
-
+   -->
 <!--
   SETUP
 
@@ -371,8 +359,8 @@ This workshop is organized by the Data Intensive Biology Training Program run by
   <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
-<div id="shell"> <!-- Start of 'shell' section. -->
-  <h3>The Bash Shell</h3>
+<!-- <div id="shell"> <!-- Start of 'shell' section. -->
+  <!-- <h3>The Bash Shell</h3>
 
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
@@ -389,16 +377,17 @@ This workshop is organized by the Data Intensive Biology Training Program run by
           <ol>
             <!-- Git 2.6.1 Setup -->
             <!-- Welcome to the Git Setup Wizard -->
-            <li>Click on "Next".</li>
+            <!-- <li>Click on "Next".</li>
             <!-- Information -->
-            <li>Click on "Next".</li>
+            <!-- <li>Click on "Next".</li>
             <!-- Select Destination Location -->
-            <li>Click on "Next".</li>
+           <!--  <li>Click on "Next".</li>
             <!-- Select Components -->
-            <li>Click on "Next".</li>
+           <!--  <li>Click on "Next".</li>
             <!-- Select Start Menu Folder -->
-            <li>Click on "Next".</li>
+            <!-- <li>Click on "Next".</li>
             <!-- Adjusting your PATH environment -->
+            <!-- 
             <li>
               <strong>
                 Select "Use Git from the Windows Command Prompt" and click on "Next".
@@ -407,23 +396,23 @@ This workshop is organized by the Data Intensive Biology Training Program run by
                 If this happens rerun the installer and select the appropriate option.
             </li>
             <!-- Configuring the line ending conversions -->
-            <li>
+            <!-- <li>
               Click on "Next".
               <strong>
                 Keep "Checkout Windows-style, commit Unix-style line endings" selected.
               </strong>
             </li>
             <!-- Configuring the terminal emulator to use with Git Bash -->
-            <li>
+            <!-- <li>
               <strong>
                 Select "Use Windows' default console window" and click on "Next".
               </strong>
             </li>
             <!-- Configuring experimental performance tweaks -->
-            <li>Click on "Next".</li>
+            <!-- <li>Click on "Next".</li>
             <!-- Installing -->
             <!-- Completing the Git Setup Wizard -->
-            <li>Click on "Finish".</li>
+            <!-- <li>Click on "Finish".</li>
           </ol>
         </li>
       </ol>
@@ -452,11 +441,12 @@ This workshop is organized by the Data Intensive Biology Training Program run by
       </p>
     </div>
   </div>
-</div> <!-- End of 'shell' section. -->
+ --> 
+<!-- </div> <!-- End of 'shell' section. -->
 
-<div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
+<!-- <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
-  <h3>Git</h3>
+  <!-- <h3>Git</h3>
   <p>
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
@@ -499,11 +489,12 @@ This workshop is organized by the Data Intensive Biology Training Program run by
       </p>
     </div>
   </div>
-</div> <!-- End of 'Git' section. -->
-
-<div id="editor"> <!-- Start of 'editor' section. -->
-  <h3>Text Editor</h3>
-
+  -->
+<!-- </div> End of 'Git' section. -->
+<!-- 
+<div id="editor"> Start of 'editor' section. -->
+  <!-- <h3>Text Editor</h3>-->
+<!-- 
   <p>
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
@@ -562,13 +553,14 @@ This workshop is organized by the Data Intensive Biology Training Program run by
       </p>
     </div>
   </div>
-</div> <!-- End of 'editor' section. -->
+-->
+<!-- </div> <!-- End of 'editor' section. -->
 
-<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
+<!--<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the IPython notebook.
            Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
-  <h3>Python</h3>
+  <!-- <h3>Python</h3>
 
   <p>
     <a href="http://python.org">Python</a> is a popular language for
@@ -643,6 +635,7 @@ This workshop is organized by the Data Intensive Biology Training Program run by
       </ol>
     </div>
   </div>
+  -->
 <!--
   <p>
   Once you are done installing the software listed above,
@@ -650,9 +643,10 @@ This workshop is organized by the Data Intensive Biology Training Program run by
   which has instructions on how to test that everything was installed correctly.
   </p>
 -->
-</div> <!-- End of 'Python' section. -->
+<!-- </div> <!-- End of 'Python' section. -->
 
-<div id="r"> <!-- Start of 'R' section. -->
+
+<div id="R and RStudio"> <!-- Start of 'R' section. -->
   <h3>R</h3>
 
   <p>
@@ -699,8 +693,8 @@ This workshop is organized by the Data Intensive Biology Training Program run by
   </div>
 </div> <!-- End of 'R' section. -->
 
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
+<!-- <div id="sql"> <!-- Start of 'SQLite' section. -->
+  <!-- <h3>SQLite</h3>
 
   <p>
     SQL is a specialized programming language used with databases.  We
